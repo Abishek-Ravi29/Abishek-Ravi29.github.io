@@ -1,0 +1,546 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="https://www.svgrepo.com/show/398341/smiling-face-with-sunglasses.svg" type="image/x-icon">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            background-color: #F5F5F5;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+            background-color: #F5F5F5;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #818cf8;
+            border-radius: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="text-gray-600 body-font cursor-pointer bg-gray-200 fixed top-0 inset-x-0 z-50 shadow-xl">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"
+                        class="w-10 h-10 text-white p-2 bg-purple-500 rounded-full" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                    <h1 class="ml-3 text-xl">Abi<span class="text-indigo-500">shek</span></h1>
+                </a>
+                <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+                    <a href="#home" class="mr-5 hover:text-indigo-500">Home</a>
+                    <a href="#about-me" class="mr-5 hover:text-indigo-500">About me</a>
+                    <a href="#services" class="mr-5 hover:text-indigo-500">Services</a>
+                    <a href="#contact" class="mr-5 hover:text-indigo-500">Contacts</a>
+                </nav>
+                <!-- <button
+                    class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button> -->
+            </div>
+        </header>
+
+
+
+        <!-- <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="width: 1000px;">
+            <path fill="#8A3FFC" d="M24.9,-10.9C31.4,11.8,35.2,32.7,27.1,38.9C19,45.2,-0.9,36.9,-16.6,25C-32.2,13.1,-43.7,-2.4,-40.3,-21C-36.8,-39.5,-18.4,-61.1,-4.6,-59.6C9.2,-58.1,18.5,-33.5,24.9,-10.9Z" transform="translate(100 100)" />
+        </svg> -->
+
+
+        <!-- <svg class="absolute z-0 hidden lg:inline-flex" width="800" height="882" viewBox="0 0 900 882" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 800px; top: -110px; right: 0px">
+            <path d="M900 882C791.083 853.522 682.351 825.045 566.037 788.431C449.723 751.632 325.827 706.697 263.509 618.491C201.377 530.284 200.822 398.807 167.167 285.637C133.511 172.281 66.7557 77.2332 0 -18H900V882Z" fill="#8A3FFC"/>
+        </svg> -->
+
+
+        <section class=" body-font h-min" id="home">
+            <div class="container mx-auto flex px-14 py-24 md:flex-row flex-col items-center">
+                <div
+                    class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                    <h1 class="text-2xl ml-1  font-bold tracking-wide text-indigo-600 lg:text-2xl" data-aos="fade-up">
+                        Hey There 😃 I am
+                    </h1>
+
+                    <h1 class="my-5 text-3xl font-bold tracking-wide text-grey-800 lg:text-5xl" data-aos="zoom-in"
+                        data-aos-easing="ease" data-aos-delay="400">
+                        Abishek Ravi
+                    </h1>
+
+                    <h1 class=" text-2xl font-bold tracking-wide text-grey-500">
+                        I'm <span id="typed" class="text-indigo-500"></span>
+                    </h1>
+
+
+                    <p class="mb-8 leading-relaxed text-gray-600"> A sophomore pursuing CSE at SRM IST
+                        Ramapuram,passionate about coding and developing projects. An Aspiring full-stack developer.</p>
+
+                    <div class="flex justify-center">
+
+                        <a href="#contact"
+                            class="flex items-center px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-opacity-80">
+                            <span class="mx-1">Let's Talk </span>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-send w-5 h-5 mx-1 " width="24" height="24"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <line x1="10" y1="14" x2="21" y2="3" />
+                                <path
+                                    d="M21 3l-6.5 18a0.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a0.55 .55 0 0 1 0 -1l18 -6.5" />
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="lg:max-w-lg lg:w-full  w-1/2 hidden lg:inline-flex" data-aos="fade-left"
+                    data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                    <img src="hero.svg" alt="" class="relative" style="right: -55px;">
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class=" body-font bg-gray-50" data-aos="zoom-in" data-aos-easing="ease" data-aos-delay="400"
+            id="about-me">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="text-center mb-20">
+                    <h1 class="sm:text-2xl text-2xl font-medium title-font text-indigo-600 mb-4" data-aos="fade-up">
+                        About me ?</h1>
+                    <h1 class="sm:text-4xl text-2xl font-bold title-font mb-4">My Skillset 👨‍🔧</h1>
+                    <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">These include my
+                        knowledge in skills for front end Development .</p>
+                    <div class="flex mt-6 justify-center">
+                        <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+                    </div>
+                </div>
+            </div>
+            <ul class="skills-bar-container">
+                <li>
+                    <div class="progressbar-title">
+                        <h3>HTML5</h3>
+                        <span class="percent" id="html-pourcent"></span>
+                    </div>
+                    <div class="bar-container">
+                        <span class="progressbar progressred" id="progress-html"></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="progressbar-title">
+                        <h3>CSS</h3>
+                        <span class="percent" id="css-pourcent"></span>
+                    </div>
+                    <div class="bar-container">
+                        <span class="progressbar progressblue" id="progress-css"></span>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="progressbar-title">
+                        <h3>JavaScript</h3>
+                        <span class="percent" id="javascript-pourcent"></span>
+                    </div>
+                    <div class="bar-container">
+                        <span class="progressbar progresspurple" id="progress-javascript"></span>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="container px-5 mx-auto">
+                <div class="text-center mb-20">
+                    <!-- <h1 class="sm:text-2xl text-2xl font-medium title-font text-indigo-600 mb-4" data-aos="fade-up">
+                        About me ?</h1> -->
+                    <h1 class="sm:text-4xl text-2xl font-bold title-font  mb-4">Tools and Technologies ⚙</h1>
+                    <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">The tools and
+                        technologies i use in daily basis</p>
+                    <div class="flex mt-6 justify-center">
+                        <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap items-center my-5 justify-evenly">
+                <div class="my-2" data-aos="fade-up" data-aos-delay="200" data-aos-easing="linear">
+                    <div class="flex max-w-md mx-auto overflow-hidden bg-white rounded-lg shadow-lg ">
+                        <div class="w-1/3 bg-cover rounded-lg mr-4 flex flex-shrink-0 justify-center"
+                            style="background-image: linear-gradient(180deg,#f44881,#ec454f)">
+                            <img src="https://laracasts.com/images/topics/icons/git-logo.svg" alt=""
+                                style="filter: invert(100%);" class="p-8">
+                        </div>
+
+                        <div class="w-2/3 p-4 md:p-4">
+                            <h1 class="text-2xl font-bold text-gray-900">Git</h1>
+                            <p class="mt-2 text-sm text-gray-600">A version control system designed to handle projects
+                                with speed and efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-2" data-aos="fade-up" data-aos-delay="500" data-aos-easing="linear">
+                    <div class="flex max-w-md mx-auto overflow-hidden bg-white rounded-lg shadow-lg ">
+                        <div class="w-1/3 bg-cover rounded-lg mr-4 flex flex-shrink-0 justify-center"
+                            style="background-image: linear-gradient(180deg,#21c8f6,#637bff)">
+                            <img src="https://code.visualstudio.com/assets/images/code-stable-white.png" alt=""
+                                class="p-10">
+                        </div>
+
+                        <div class="w-2/3 p-4 md:p-4">
+                            <h1 class="text-2xl font-bold text-gray-900">VS Code</h1>
+                            <p class="mt-2 text-sm text-gray-600">A version control system designed to handle projects
+                                with speed and efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-2" data-aos="fade-up" data-aos-delay="900" data-aos-easing="linear">
+                    <div class="flex items-center  max-w-md mx-auto overflow-hidden bg-white rounded-lg shadow-lg ">
+                        <div class="w-1/3 bg-cover rounded-lg mr-4 flex flex-shrink-0 justify-center" style="background-color: #000000;
+                        background-image: linear-gradient(315deg, #000000 0%, #414141 74%);">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/128px-Figma-logo.svg.png"
+                                alt="" class="p-12">
+                        </div>
+
+                        <div class="w-2/3 p-4 md:p-4">
+                            <h1 class="text-2xl font-bold text-gray-900">Figma</h1>
+                            <p class="mt-2 text-sm text-gray-600">A version control system designed to handle projects
+                                with speed and efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-2" data-aos="fade-up" data-aos-delay="1200" data-aos-easing="linear">
+                    <div class="flex  max-w-md mx-auto overflow-hidden bg-white rounded-lg shadow-lg ">
+                        <div class="w-1/3 bg-cover rounded-lg mr-4 flex flex-shrink-0 justify-center" style="background-color: #000000;
+                        background-image: linear-gradient(315deg, #000000 0%, #414141 74%)">
+                            <img src="https://laracasts.com/images/topics/icons/tailwind-logo.svg" alt="" class="p-5">
+                        </div>
+
+                        <div class="w-2/3 p-4 md:p-4">
+                            <h1 class="text-2xl font-bold text-gray-900">Tailwind CSS </h1>
+                            <p class="mt-2 text-sm text-gray-600">A version control system designed to handle projects
+                                with speed and efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-2" data-aos="fade-up" data-aos-delay="1500" data-aos-easing="linear">
+                    <div class="flex  max-w-md mx-auto overflow-hidden bg-white rounded-lg shadow-lg ">
+                        <div class="w-1/3 bg-cover rounded-lg mr-4 flex flex-shrink-0 justify-center" style="
+                        background-image: linear-gradient(0deg,#f19a1a,#ffc73c)">
+                            <img src="https://sachsenhofer.io/wp-content/uploads/2018/06/node-js-white.png" alt=""
+                                class="p-5">
+                        </div>
+
+                        <div class="w-2/3 p-4 md:p-4">
+                            <h1 class="text-2xl font-bold text-gray-900">JavaScript</h1>
+                            <p class="mt-2 text-sm text-gray-600">A version control system designed to handle projects
+                                with speed and efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-2" data-aos="fade-up" data-aos-delay="2000" data-aos-easing="linear">
+                    <div class="flex  max-w-md mx-auto overflow-hidden bg-white rounded-lg shadow-lg ">
+                        <div class="w-1/3 bg-cover rounded-lg mr-4 flex flex-shrink-0 justify-center" style="
+                        background-image: linear-gradient(0deg,#8b60ed,#b372bd)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Linux_Logo_in_Linux_Libertine_Font.svg"
+                                alt="" class="p-5" style="filter: invert(100%);">
+                        </div>
+
+                        <div class="w-2/3 p-4 md:p-4">
+                            <h1 class="text-2xl font-bold text-gray-900">Linux OS</h1>
+                            <p class="mt-2 text-sm text-gray-600">A version control system designed to handle projects
+                                with speed and efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+
+        <section class="text-gray-600 bg-white body-font mb-20" id="services">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="text-center mb-20">
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">My Services 👨‍💻</h1>
+                    <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">Services that i can
+                        proivde to the clients.</p>
+                    <div class="flex mt-6 justify-center">
+                        <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap justify-evenly mx-2 -mb-10 -mt-4 md:space-y-0 space-y-6">
+
+                    <div class=" p-4 md:w-1/4 flex flex-col text-center items-center border-4 border-indigo-500 bg-white rounded-2xl"
+                        data-aos="fade-up" data-aos-delay="500" data-aos-easing="linear">
+                        <div
+                            class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-layout-board "
+                                width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <rect x="4" y="4" width="16" height="16" rx="2" />
+                                <path d="M4 9h8" />
+                                <path d="M12 15h8" />
+                                <path d="M12 4v16" />
+                            </svg>
+                        </div>
+                        <div class="flex-grow">
+                            <h2 class="text-gray-900 text-lg title-font font-medium mb-3 ">Web Design</h2>
+                            <p class="leading-relaxed text-base">Been designing attractive templates and borders for a
+                                website with an objective to make a positive impact on my clients.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="p-4 md:w-1/4 flex flex-col text-center items-center border-4 border-indigo-500 bg-white rounded-2xl"
+                        data-aos="fade-up" data-aos-delay="800" data-aos-easing="linear">
+                        <div
+                            class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-vector-bezier"
+                                width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <rect x="3" y="14" width="4" height="4" rx="1" />
+                                <rect x="17" y="14" width="4" height="4" rx="1" />
+                                <rect x="10" y="6" width="4" height="4" rx="1" />
+                                <path d="M10 8.5a6 6 0 0 0 -5 5.5" />
+                                <path d="M14 8.5a6 6 0 0 1 5 5.5" />
+                                <line x1="10" y1="8" x2="4" y2="8" />
+                                <line x1="20" y1="8" x2="14" y2="8" />
+                                <circle cx="3" cy="8" r="1" />
+                                <circle cx="21" cy="8" r="1" />
+                            </svg>
+                        </div>
+                        <div class="flex-grow">
+                            <h2 class="text-gray-900 text-lg title-font font-medium mb-3 ">UI/UX</h2>
+                            <p class="leading-relaxed text-base"> Designing pages for user interface and user experience and wireframes.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="p-4 md:w-1/4 flex flex-col text-center items-center border-4 border-indigo-500 bg-white rounded-2xl"
+                        data-aos="fade-up" data-aos-delay="1100" data-aos-easing="linear">
+                        <div
+                            class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code" width="40"
+                                height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <polyline points="7 8 3 12 7 16" />
+                                <polyline points="17 8 21 12 17 16" />
+                                <line x1="14" y1="4" x2="10" y2="20" />
+                            </svg>
+                        </div>
+                        <div class="flex-grow">
+                            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Frontend Development</h2>
+                            <p class="leading-relaxed text-base"> Responsible for client-side coding, For the best visualisation and responsiveness of the website.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <svg fill="currentColor" viewBox="0 0 1695 57" class="text-gray-100">
+            <path
+                d="M0 23c135.4 19 289.6 28.5 462.5 28.5C721.9 51.5 936.7 1 1212.2 1c183.6-.1 344.5 7.3 482.8 22v34H0V23z">
+            </path>
+        </svg>
+        <section class="text-gray-600 bg-gray-100 body-font relative" id="contact">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-col text-center w-full mb-12">
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Me</h1>
+                    <p class="lg:w-2/3 mx-auto leading-relaxed text-base">You can reach out to me through my social
+                        handles and e-mail or personal contact number.</p>
+                </div>
+                <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                    <div class="flex flex-wrap -m-2">
+                        <div class="p-2 w-1/2">
+                            <div class="relative">
+                                <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                                <input type="text" id="name" name="name"
+                                    class="w-full bg-white bg-opacity-50 rounded border border-gray-300 focus:border-purple-500 focus:bg-white focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                            </div>
+                        </div>
+                        <div class="p-2 w-1/2">
+                            <div class="relative">
+                                <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                                <input type="email" id="email" name="email"
+                                    class="w-full bg-white bg-opacity-50 rounded border border-gray-300 focus:border-purple-500 focus:bg-white focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                            </div>
+                        </div>
+                        <div class="p-2 w-full">
+                            <div class="relative">
+                                <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                                <textarea id="message" name="message"
+                                    class="w-full bg-white bg-opacity-50 rounded border border-gray-300 focus:border-purple-500 focus:bg-white focus:ring-2 focus:ring-purple-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                            </div>
+                        </div>
+                        <div class="p-2 w-full">
+                            <button
+                                class="flex items-center mx-auto text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg">Send
+                                Message <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-send w-5 h-5 mx-1 " width="40" height="40"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                    <path
+                                        d="M21 3l-6.5 18a0.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a0.55 .55 0 0 1 0 -1l18 -6.5" />
+                                </svg></button>
+                        </div>
+                        <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+                            <a class="text-purple-500">abishek290802@gmail.com</a>
+                            <p class="leading-normal my-5">Inbarajapuram 1st St.
+                                <br>choolaimedu, chennai-60094
+                            </p>
+                            <span class="inline-flex">
+                                <a class="text-gray-500">
+                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                    </svg>
+                                </a>
+                                <a class="ml-4 text-gray-500">
+                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path
+                                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a class="ml-4 text-gray-500">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                                    </svg>
+                                </a>
+                                <a class="ml-4 text-gray-500">
+                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path
+                                            d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="bg-gray-100 mt-8">
+                <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                    <p class="text-gray-500 text-sm text-center sm:text-left">© 2022 Abishek29 —
+                        <a href="https://twitter.com/KRAbishek291" rel="noopener noreferrer" class="text-gray-600 ml-1"
+                            target="_blank">@ka7205</a>
+                    </p>
+                    <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                        <a class="text-gray-500">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a class="ml-3 text-gray-500">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                class="w-5 h-5" viewBox="0 0 24 24">
+                                <path
+                                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="ml-3 text-gray-500">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                            </svg>
+                        </a>
+                        <a class="ml-3 text-gray-500">
+                            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path stroke="none"
+                                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                                </path>
+                                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                            </svg>
+                        </a>
+                    </span>
+                </div>
+        </footer>
+    </div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        var lang = {
+            "html": "100%",
+            "css": "90%",
+            "javascript": "70%",
+        };
+
+        var multiply = 4;
+
+        $.each(lang, function (language, pourcent) {
+
+            var delay = 700;
+
+            setTimeout(function () {
+                $('#' + language + '-pourcent').html(pourcent);
+            }, delay * multiply);
+
+            multiply++;
+
+        });
+
+        var typed = new Typed('#typed', {
+            strings: [' a Freelancer', 'Web designer', 'Web developer'],
+            typeSpeed: 40,
+            smartBackspace: true,
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>
+
+<!-- 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 -->
